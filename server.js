@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static('./dist/ZOOM-INTERGRATION/'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/ZOOM-INTERGRATION/'}),
+    res.sendFile('index.html', {root: 'dist/ZOOM-INTERGRATION/index.html'}),
 );
 
 // Start the app by listening on the default Heroku port
